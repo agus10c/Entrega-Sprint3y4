@@ -1,5 +1,5 @@
 const express = require('express');
-const logger = require('./mi-logger');
+const logger = require('./middlewares/mi-logger.js');
 const productosRoutes = require('./routes/productosRoutes.js');
 const app = express();
 const PORT = process.env.PORT || 3000;
