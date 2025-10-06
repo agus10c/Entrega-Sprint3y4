@@ -1,7 +1,7 @@
 
 .App {
+  margin: 0;
+  padding: 0;
+  background-color: #F5E6D3;
   text-align: center;
-  box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }

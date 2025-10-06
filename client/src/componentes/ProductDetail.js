@@ -9,9 +9,9 @@ function ProductDetail({ producto, agregarAlCarrito, volver }) {
             </div>
             <div className="detalle-info">
                 <h1> Producto: {producto.nombre} </h1>
-                <h3>${producto.nombre}</h3>
-                <p className="precio">{producto.precio.toLocaleString("es-AR")}</p>
-                <p className="descripcion">${producto.descripcion}</p>
+                <h3>{producto.nombre}</h3>
+                <p className="precio">${producto.precio.toLocaleString("es-AR")}</p>
+                <p className="descripcion">{producto.descripcion}</p>
             </div>
             <button onClick={() => agregarAlCarrito(producto)}>
                 Añadir al Carrito

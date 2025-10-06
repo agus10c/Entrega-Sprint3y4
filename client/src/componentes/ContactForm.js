@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles/Navbar.css";
+import "./styles/ContactForm.css";
 
 function ContactForm() {
   // Estado para cada input

@@ -3,9 +3,9 @@ import "./styles/Footer.css";
 
 function Footer() {
     return (
-        <footer className="footer">
-            <h2>Información basica</h2>
+        <footer className="footer">      
             <div className="footer-info">
+                <h2>Información basica</h2>
                 <p>Hermanos Jota — Casa Taller</p>
                 <p>Av. San Juan 2847</p>
                 <p>C1232AAB — Barrio de San Cristóbal</p>
@@ -21,6 +21,7 @@ function Footer() {
                 <p>WhatsApp: <a href="https://wa.me/541145678900" target="_blank">+54 11 4567-8900</a></p>
                 <p>Instagram: <a href="https://instagram.com/hermanosjota_ba" target="_blank">@hermanosjota_ba</a></p>
             </div>
+            <p>© 2025 Hermanos Jota. Todos los derechos reservados.</p>
         </footer>
     );
 }
