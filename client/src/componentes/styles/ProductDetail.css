@@ -1,0 +1,35 @@
+#detalle-producto {
+    display: flex;  
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.detalle-imagen {
+    width: 40%;
+}
+.detalle-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.detalle-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.detalle-info .descripcion {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color:#A0522D;
+}
+
+.detalle-info .precio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #87A96B; 
+    margin-bottom: 1.5rem;
+}

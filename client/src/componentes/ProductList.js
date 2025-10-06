@@ -3,11 +3,10 @@ import ProductCard from "./ProductCard";
 import "./styles/ProductList.css";
 
 
-function ProductList() {
+function ProductList({seleccionarProducto}) {
   const [productos, setProductos] = useState([]); // guarda los productos del backend
   const [cargando, setCargando] = useState(true); // indica si está cargando
   const [error, setError] = useState(false); // indica si hubo un error
-  const [productoSeleccionado, setProductoSeleccionado] = useState(null); // detalle del producto elegido
 
   useEffect(() => {
     fetch("/api/productos")
@@ -30,7 +29,7 @@ function ProductList() {
       {productos.map(producto => (
         // 3. Por cada elemento, devolvemos un <li>.
         // ¡Le asignamos la 'key' usando el ID único de la tarea!
-        <li key={producto.id}>
+        <li key={producto.id} onClick={() => seleccionarProducto(producto)}>
           <ProductCard
             nombre={producto.nombre}
             precio={producto.precio}
